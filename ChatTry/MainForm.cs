@@ -21,9 +21,11 @@ namespace ChatTry
 
         private void btnConnect_Click(object sender, EventArgs e)
         {
+            this.Hide();
             ClientChatForm chat = new ClientChatForm();
             chat.ShowDialog();
-            Close(); 
+            Application.Exit();
+           
         }
        
         private void btnStartServer_Click(object sender, EventArgs e)
